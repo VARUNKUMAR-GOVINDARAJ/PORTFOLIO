@@ -1,0 +1,102 @@
+.home{
+
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    
+  
+}
+
+
+
+.home-name{
+    letter-spacing: 1px;
+    color: aqua;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+@keyframes homeblink {
+    0% {
+      color: white;  /* Color at the start */
+    }
+    50% {
+      color: transparent;  /* Make the text disappear */
+    }
+    100% {
+      color: white;  /* Return to the original color */
+    }
+  }
+  
+
+.home-bio{
+    letter-spacing: 1.5px;
+
+
+    animation: homeblink 0.7s infinite;
+
+
+    font-weight: bolder;
+    font-size: 15px;
+
+    margin-bottom: 50px;
+
+
+    
+}
+
+/* .home-button{
+
+    
+    animation: homeblink 0.7s infinite; 
+    padding: 10px;
+    color: white ;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 0px ;
+
+    letter-spacing: 0.5px;
+} */
+
+/* Button styling with #6EFDFF (light Aqua) and White */
+.home-button {
+    padding: 12px 30px;
+    color: #6EFDFF;  /* Aqua text for contrast */
+    font-weight: bold;
+    background-color: black;  /* White background by default */
+    border: 1px solid #6EFDFF;  /* Light Aqua border */
+    border-radius: 40px;  /* Rounded corners */
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+    cursor: pointer;
+}
+
+/* Hover effect for the button */
+.home-button:hover {
+    background-color: #6EFDFF;  /* Light Aqua background on hover */
+    color: black;  /* White text on hover */
+    /* border: 2px solid black;  White border on hover */
+    box-shadow: 0px 4px 15px rgba(110, 253, 255, 0.5);  /* Soft glowing shadow */
+    transform: scale(1.05);  /* Slightly enlarges the button */
+}
+
+/* Focus effect for the button */
+.home-button:focus {
+    outline: none;  /* Remove the default outline */
+    box-shadow: 0 0 5px 2px #6EFDFF;  /* Subtle Aqua glow effect */
+}
+

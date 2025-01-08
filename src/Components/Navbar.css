@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar{
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid aqua;  /* Border color only on the top (X-axis) */
+  border-left: none;  /* No left border */
+  border-right: none;  /* No right border */
+  border-top: none;  /* No bottom border */
+    height: 55px;
+    width: 100vw;
+
+    background-color: black;
+    color: white;
+
+    display: flex; /* flex-direction: column;  this is the error making from all places*/
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    z-index: 10px;
+}
+
+.nav-name{
+  padding-left: 20px;
+
+
+    width: 40vw; /* this 40 and 40 for comps bal 20 in mobile responsive??? */
+
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    animation: navblink 1s infinite;
+}
+
+.nav-comps{
+  padding-right: 20px;
+
+
+    width: 35vw;
+
+    font-size: smaller;
+    font-weight: bold;
+
+   
+    display: flex;
+    /* gap:20px; */
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.nav-aboutme, .nav-skills, .nav-projects, .nav-contact {
+
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    padding: 10px ;
+    transition: color 0.3s ease;  /* Smooth color transition */
+    display: inline-block;
+
+  }
+  
+  /* Hover effect for each nav item */
+  .nav-aboutme:hover, .nav-skills:hover, .nav-projects:hover, .nav-contact:hover, .nav-name:hover {
+    color: aqua !important;
+    transition: color 0.3s ease  /* Highlight color on hover */
+  }
+  
+  /* Sliding line effect using ::after */
+  .nav-aboutme::after, .nav-skills::after, .nav-projects::after, .nav-contact::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white !important;
+    transition: width 0.3s ease;  /* Animate the width of the line */
+  }
+  
+  .nav-aboutme, .nav-skills, .nav-projects, .nav-contact {
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s ease;  /* Smooth color transition */
+  }
+  
+  /* Hover effect for each nav item */
+  .nav-aboutme:hover, .nav-skills:hover, .nav-projects:hover, .nav-contact:hover {
+    color: white;  /* Highlight color on hover */
+  }
+  
+  /* Sliding line effect using ::after */
+  .nav-aboutme::after, .nav-skills::after, .nav-projects::after, .nav-contact::after {
+
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: aqua ;
+    transition: width 0.5s ease;  /* Animate the width of the line */
+    display: block;
+  }
+  
+  /* When hovering, the sliding line expands to full width */
+  .nav-aboutme:hover::after,
+  .nav-skills:hover::after,
+  .nav-projects:hover::after,
+  .nav-contact:hover::after {
+    width: 100%;  /* Expand the line to full width */
+  }
+
+
+
+
+/* navblinking effect animation */
+@keyframes navblink {
+  0% {
+    color: aqua;  /* Color at the start */
+  }
+  50% {
+    color: transparent;  /* Make the text disappear */
+  }
+  100% {
+    color: white;  /* Return to the original color */
+  }
+}
