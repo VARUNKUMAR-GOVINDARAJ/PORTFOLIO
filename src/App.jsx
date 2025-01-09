@@ -2,7 +2,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-import React from 'react';
+
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -12,10 +12,10 @@ function App() {
   return (
     <div>
 
-      {/* <Navbar/>
-      <Home/>
-      <About/> */}
-      <Skills/>
+      <Navbar/>
+      {/* <Home/> */}
+      {/* <About/> */}
+      {/* <Skills/> */}
       
       
     </div>

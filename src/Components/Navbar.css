@@ -41,7 +41,7 @@
   padding-right: 20px;
 
 
-    width: 35vw;
+    width: 50vw;
 
     font-size: smaller;
     font-weight: bold;
@@ -135,4 +135,15 @@
   100% {
     color: white;  /* Return to the original color */
   }
+}
+
+
+
+@media ( max-width:760px ) {
+
+  .nav-comps{
+    display: none;
+  }
+
+  
 }
