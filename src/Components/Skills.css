@@ -1,4 +1,5 @@
 .skills{
+
     height: 100%;
     width: 100%;
 
@@ -9,9 +10,13 @@
 
     color: white;
     background-color: black;
+
 }
 
 .skill-heading{
+    margin-top: 100px ;
+    margin-bottom: 80px;
+
     width: 60vw;
 
     color: aqua;
@@ -19,7 +24,6 @@
     animation:  skillblink 1s infinite;
     letter-spacing: 1px;
 
-    margin-bottom: 50px;
     text-align: center !important;
     
 }
@@ -39,15 +43,19 @@
 
 
 .skill-c{
+
+    margin-bottom: 100px;
+
+    /* width: 80vw; */
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
 }
 
 .skill-logo{
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
 }
 
 .skill-con{
@@ -56,24 +64,23 @@
     display: flex;
     align-items: center;
     /* justify-content: space-evenly; */
-    gap:80px
+    gap:10px
 }
 
 .skill-box{
 
     width: 100%;
-    height: 250px;
+    height: 230px;
 
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
  
     border-radius: 45px;
-    padding: 50px;
+    padding: 40px;
 
     display: flex;
     flex-direction: column;
-    gap: 50px;
     align-items: center;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
 }
 
 .skill-title{
@@ -90,4 +97,11 @@
     text-align: center !important;
 
     /* margin-bottom: 50px; */
+}
+
+@media screen and (max-width: 768px) {
+    .skill-con {
+        display: flex;
+        flex-direction: column;
+    }
 }

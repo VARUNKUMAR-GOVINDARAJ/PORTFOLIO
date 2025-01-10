@@ -13,6 +13,8 @@
 }
 
 .about-heading {
+  margin-top: 100px;
+
     width: 60vw;
 
     color: aqua;
@@ -21,6 +23,7 @@
     letter-spacing: 1px;
 
     margin-bottom: 50px;
+    
     text-align: left !important;
 
 }
@@ -41,6 +44,53 @@
 .about-p{
     width: 60vw;
     text-align: left;
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px;  
+}
+
+
+.about-education{
+
+  margin-top: 50px ;
+  margin-bottom: 80px;
+}
+
+.about-eduction-heading{
+
+  width: 60vw;
+
+  color: aqua;
+  font-weight: bolder;
+  animation:  aboutblink 1s infinite;
+  letter-spacing: 1px;
+
+  margin-bottom: 60px;
+  text-align: left !important;
+
+}
+
+.about-edu-p{
+  margin-top: 30px ;
+  width: 60vw;
+  text-align: left !important;
+  letter-spacing: 1px; 
+}
+
+.a-e-p{
+
+  font-size: small;
+  margin-top: 20px !important ;
+  width: 60vw;
+  text-align: left;
+  letter-spacing: 1px; 
+
+  line-height: 30px;
+}
+
+.a-e-h{
+  /* font-weight: bolder; */
+  color: aqua;
+  margin-top: 30px ;
+  letter-spacing: 2px; 
+
+
 }

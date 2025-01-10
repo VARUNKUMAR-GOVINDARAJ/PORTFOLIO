@@ -1,0 +1,63 @@
+.project{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background-color: black !important;
+}
+
+.project-heading{
+    margin-top: 100px ;
+    margin-bottom: 80px;
+
+    width: 60vw;
+
+    color: aqua;
+    font-weight: bolder;
+    animation:  skillblink 1s infinite;
+    letter-spacing: 1px;
+
+    text-align: left !important;
+}
+
+.project-con{
+    height: 100%;
+    width: 60vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+
+    /* text-align: left !important; */
+
+}
+
+.project-h{
+    width: 60vw;
+    letter-spacing: 1px;
+
+    color: aqua;
+
+    font-weight: bolder;
+    margin-bottom: 30px;
+    font-size: larger;
+
+    
+
+}
+
+.project-p{
+    width: 60vw;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+    margin-bottom: 80px;
+
+}

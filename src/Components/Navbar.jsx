@@ -27,19 +27,19 @@ function Navbar() {
 
       </div>
 
-      <div className='home-offcanvas'>
+      <div className='nav-offcanvas'>
 
-        <Button variant="primary" onClick={handleShow}>
+        <Button style={{ backgroundColor:"black", borderColor:'aqua', marginRight:'20px'}} onClick={handleShow}>
           <i className="bi bi-list nav-off-btn"></i>
         </Button>
 
         <Offcanvas show={show} onHide={handleClose} backdrop="static" >
-          <Offcanvas.Header closeButton style={{ backgroundColor: 'black' }}>
-            <Offcanvas.Title className='nav-name' > PORTFOLIO </Offcanvas.Title>
+          <Offcanvas.Header closeButton style={{ backgroundColor: 'white',color:'black' }}>
+            <Offcanvas.Title className='nav-name-off' > PORTFOLIO </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body style={{ backgroundColor: 'black', color: 'white', fontWeight:'bolder' }}>
 
-            <div style={{ marginLeft }}>
+            <div style={{ marginLeft:'20px'}}>
               <p>ABOUT ME</p>
               <p>SKILLS</p>
               <p>PROJECT</p>

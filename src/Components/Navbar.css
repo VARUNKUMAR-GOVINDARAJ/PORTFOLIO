@@ -137,13 +137,51 @@
   }
 }
 
+.nav-name-off{
+  padding-left: 20px;
+
+
+    width: 40vw; /* this 40 and 40 for comps bal 20 in mobile responsive??? */
+
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    animation: navoffblink 1s infinite;
+}
+
+
+@keyframes navoffblink {
+  0% {
+    color: aqua;  /* Color at the start */
+  }
+  50% {
+    color: transparent;  /* Make the text disappear */
+  }
+  100% {
+    color: black;  /* Return to the original color */
+  }
+}
+
+.nav-offcanvas{
+  display: none;
+}
+
 
 
 @media ( max-width:760px ) {
 
+
   .nav-comps{
     display: none;
   }
+
+  .nav-offcanvas{
+    display: block;
+  }
+
+
+
 
   
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import '../Components/Skills.css';
 
 function Skills() {
