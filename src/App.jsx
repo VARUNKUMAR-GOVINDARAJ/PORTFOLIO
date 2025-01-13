@@ -8,19 +8,33 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Skills from './Components/Skills';
 import Project from './Components/Project';
+import { Routes, Route } from 'react-router-dom';
+
+
+import './app.css'
 
 function App() {
   return (
     <div>
 
       <Navbar/>
-      <Home/>
+      {/* <Home/>
       <About/>
       <Skills/>
 
       <Project/>
 
-      <Contact/>
+      <Contact/>  */}
+
+      <Routes> 
+        <Route path='/' element = {<Home/>} />
+        <Route path='/about' element = {<About/>} />
+        <Route path='/skills' element = {<Skills/>} />
+        <Route path='/project' element = {<Project/>} />
+        <Route path='/contact' element = {<Contact  />} />
+      </Routes>
+
+      
       
       
     </div>

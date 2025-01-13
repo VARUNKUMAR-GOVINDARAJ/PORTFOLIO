@@ -1,6 +1,10 @@
 *{
-    margin: 0px;
+
+    border: 0;
+    padding: 0;
+    margin: 0;
     font-family: Arial, sans-serif;
+    
 }
 
 .navbar{
@@ -10,8 +14,8 @@
   border-left: none;  /* No left border */
   border-right: none;  /* No right border */
   border-top: none;  /* No bottom border */
-    height: 55px;
-    width: 100vw;
+    height: 60px;
+    width: 100%;
 
     background-color: black;
     color: white;
@@ -184,4 +188,16 @@
 
 
   
+}
+
+.home-off-p:hover {
+  color: aqua !important; /* Color on hover */
+}
+
+
+
+/* Custom CSS to change the color of the close button */
+.offcanvas-header .btn-close {
+  color: white !important; /* This will change the "X" icon to white */
+  border-color: white !important; /* This will change the border of the close button */
 }

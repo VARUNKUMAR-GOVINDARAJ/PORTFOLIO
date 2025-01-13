@@ -3,6 +3,7 @@ import '../Components/Navbar.css'
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
@@ -12,18 +13,25 @@ function Navbar() {
   const handleShow = () => setShow(true);
 
 
+
+ // Function to close the Offcanvas when a link is clicked
+  const handleOffClick = () => {
+    handleClose()
+  }
+
+
   return (
 
     <div className='navbar'>
 
-      <div className='nav-name'> PORTFOLIO </div>
+      <Link to='/' style={{ textDecoration:'none'}} onClick={handleOffClick} > <div className='nav-name'> PORTFOLIO </div> </Link>
 
       <div className='nav-comps'>
 
-        <div className='nav-aboutme'> ABOUT ME </div>
-        <div className='nav-skills'> SKILLS </div>
-        <div className='nav-projects'> PROJECTS </div>
-        <div className='nav-contact'> CONTACT </div>
+       <Link to='/about' style={{ textDecoration:'none'}} onClick={handleOffClick}> <div className='nav-aboutme'> ABOUT ME </div> </Link>
+       <Link to='/skills' style={{ textDecoration:'none'}} onClick={handleOffClick}>  <div className='nav-skills'> SKILLS </div> </Link>
+       <Link to='/project' style={{ textDecoration:'none'}} onClick={handleOffClick}> <div className='nav-projects'> PROJECTS </div> </Link>
+       <Link to='/contact' style={{ textDecoration:'none'}} onClick={handleOffClick} > <div className='nav-contact'> CONTACT </div> </Link>
 
       </div>
 
@@ -33,17 +41,22 @@ function Navbar() {
           <i className="bi bi-list nav-off-btn"></i>
         </Button>
 
-        <Offcanvas show={show} onHide={handleClose} backdrop="static" >
-          <Offcanvas.Header closeButton style={{ backgroundColor: 'white',color:'black' }}>
-            <Offcanvas.Title className='nav-name-off' > PORTFOLIO </Offcanvas.Title>
+        <Offcanvas show={show} onHide={handleClose} placement="end" backdrop="static" >
+          <Offcanvas.Header closeButton style={{ backgroundColor: 'aqua',color:'black' }}>
+
+          <Link to='/about' style={{ textDecoration:'none'}} onClick={handleOffClick}> 
+          <Offcanvas.Title className='nav-name-off' > PORTFOLIO </Offcanvas.Title> </Link>
+          
           </Offcanvas.Header>
-          <Offcanvas.Body style={{ backgroundColor: 'black', color: 'white', fontWeight:'bolder' }}>
+          <Offcanvas.Body style={{ backgroundColor: 'black', fontWeight:'bolder' }}>
 
             <div style={{ marginLeft:'20px'}}>
-              <p>ABOUT ME</p>
-              <p>SKILLS</p>
-              <p>PROJECT</p>
-              <p>CONTACT</p>
+
+             <Link to='/about' style={{ textDecoration:'none'}} onClick={handleOffClick}> <p style={{ color:"white"}} className='home-off-p' >ABOUT ME</p> </Link>
+             <Link to='/skills' style={{ textDecoration:'none'}} onClick={handleOffClick}> <p style={{ color:"white"}} className='home-off-p'>SKILLS</p> </Link>
+             <Link to='/project' style={{ textDecoration:'none'}} onClick={handleOffClick}> <p style={{ color:"white"}} className='home-off-p'>PROJECTS</p> </Link>
+             <Link to='/contact' style={{ textDecoration:'none'}} onClick={handleOffClick}> <p style={{ color:"white"}} className='home-off-p'>CONTACT</p> </Link>
+
             </div>
 
           </Offcanvas.Body>
